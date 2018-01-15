@@ -3,17 +3,20 @@
 
 import PromiseKit
 
-func readDocument<Snapshot,Object>(snapshotFunction:(@escaping (Snapshot?, Error?) -> Void) -> Void,
-                                   snapshotHandler:@escaping (Snapshot, (Object) -> Void, (Error) -> Void) -> Void) -> Promise<Object> {
-    return Promise { fulfil, reject in
-        snapshotFunction { firestoreSnapshot, error in
-            if let snapshot = firestoreSnapshot {
-                snapshotHandler(snapshot, fulfil, reject)
+extension Promise {
+
+    static func readSnapshot<Snapshot>(snapshotFunction function:(@escaping (Snapshot?, Error?) -> Void) -> Void,
+                                       snapshotHandler handler:@escaping (Snapshot, (T) -> Void, (Error) -> Void) -> Void) -> Promise<T> {
+        return Promise { fulfil, reject in
+            function { snapshot, error in
+                if let snapshot = snapshot {
+                    handler(snapshot, fulfil, reject)
+                }
+                if let error = error {
+                    reject(error)
+                }
+                reject(DocumentError.notFound)
             }
-            if let error = error {
-                reject(error)
-            }
-            reject(DocumentError.notFound)
         }
     }
 }

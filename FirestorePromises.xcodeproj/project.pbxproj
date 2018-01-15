@@ -20,6 +20,7 @@
 		6C1EC443200B8D2E00AA3810 /* DictionaryInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EC442200B8D2E00AA3810 /* DictionaryInitable.swift */; };
 		6C1EC445200B8D7000AA3810 /* CollectionReference+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EC444200B8D7000AA3810 /* CollectionReference+Extensions.swift */; };
 		6C1EC447200B8DBD00AA3810 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EC446200B8DBD00AA3810 /* Functions.swift */; };
+		6C38DFA4200B93EC0055BAF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6C38DFA3200B93EC0055BAF9 /* README.md */; };
 		6C8FFABE2009BED8009B97CD /* FirestorePromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8FFAB42009BED8009B97CD /* FirestorePromises.framework */; };
 		6C8FFAC32009BED8009B97CD /* FirestorePromisesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8FFAC22009BED8009B97CD /* FirestorePromisesTests.swift */; };
 		6C8FFAC52009BED8009B97CD /* FirestorePromises.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C8FFAB72009BED8009B97CD /* FirestorePromises.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +52,7 @@
 		6C1EC442200B8D2E00AA3810 /* DictionaryInitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryInitable.swift; sourceTree = "<group>"; };
 		6C1EC444200B8D7000AA3810 /* CollectionReference+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionReference+Extensions.swift"; sourceTree = "<group>"; };
 		6C1EC446200B8DBD00AA3810 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		6C38DFA3200B93EC0055BAF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6C8FFAB42009BED8009B97CD /* FirestorePromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirestorePromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8FFAB72009BED8009B97CD /* FirestorePromises.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirestorePromises.h; sourceTree = "<group>"; };
 		6C8FFAB82009BED8009B97CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		6C8FFAAA2009BED8009B97CD = {
 			isa = PBXGroup;
 			children = (
+				6C38DFA3200B93EC0055BAF9 /* README.md */,
 				6C1EC43D2009C18000AA3810 /* Cartfile */,
 				6C8FFAB62009BED8009B97CD /* FirestorePromises */,
 				6C8FFAC12009BED8009B97CD /* FirestorePromisesTests */,
@@ -240,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C38DFA4200B93EC0055BAF9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
